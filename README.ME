@@ -1,0 +1,35 @@
+## Docker + API Express + MySQL
+
+This project implements a express API server connected to a MySQL database working as Docker containers.
+
+After install Docker, run the following code to setup the development or production stack:
+
+````
+$ docker-compose build 
+
+$ docker-compose up
+````
+
+The routes are:
+
+````
+CREATE (POST)
+$ api/movies 
+body {
+    title: "title"
+}
+READ (GET)
+$ api/movies/id
+
+UPDATE (PATCH)
+$ api/movies/id
+body {
+    title: "new title"
+}
+
+DELETE (DELETE)
+$ api/movies/id
+
+LIST (GET)
+$ api/movies 
+````
